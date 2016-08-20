@@ -1,0 +1,158 @@
+<html>
+  <header>
+    <TITLE>  Lab 2  </TITLE>
+    <link rel="stylesheet" type="text/css" href="formatMinimized.css">
+  </header>
+
+  <body>
+    <h1>  ----- Lab 2 -----</h1>
+<hr class="hr"> </hr>
+    <h2 id="Favsp"> Favorite sports </h2>
+    <p class="acts"> - Gymnastics </p>
+	<img id="gym" src="gym.jpg" alt="gym" style="width:200px;height:200px;">
+
+<p class="acts"> - Kung Fu</p>
+<img id="panda" src="panda.png" alt="Kung fu" style="width:200px;height:200px;">
+
+<p class="acts"> - TRX</p>
+<img id="trx" src="trx.jpg" alt="TRX" style="width:400px;height:200px;">
+
+<hr class="hr"> </hr>
+    <h2> Web terms description </h2>
+   <div>
+     <h3>URL</h3>
+      <p>URL is the abbreviation of Uniform Resource Locator. URL is the global address of documents and other resources on the World Wide Web.</p>
+
+    <h3>MIME</h3>
+      <p> Short for Multipurpose Internet Mail Extensions, a specification for formatting non-ASCII messages so that they can be sent over the Internet. Many e-mail clients now support MIME, which enables them to send and receive graphics, audio, and video files via the Internet mail system. </p>
+
+     <h3>XML</h3>
+      <p> XML stands for EXtensible Markup Language. It was designed to store and transport data and  to be both human- and machine-readable.
+</p>
+  <h3>XHTML</h3>
+    <ul> <li>XHTML stands for EXtensible HyperText Markup Language</li>
+    <li>XHTML is almost identical to HTML</li>
+    <li>XHTML is stricter than HTML</li>
+    <li>XHTML is HTML defined as an XML application</li>
+     <li>XHTML is supported by all major browsers </li></ul>
+
+     <h3>HTML5</h3>
+      <p> Developed to solve compatibility problems that affect the current standard, HTML4. One of the biggest differences between HTML5 and previous versions of the standard is that older versions of HTML require proprietary plugins and APIs. HTML5 provides one common interface to make loading elements easier.</p>
+
+     <h3>JS</h3>
+      <p> JavaScript is an interpreted programming or script language from Netscape. Script languages generally take longer to process than compiled languages, but are very useful for shorter programs.</p>
+
+     <h3>PHP</h3>
+      <p> PHP is an acronym for "PHP: Hypertext Preprocessor". It's widely-used, open source scripting language. Scripts are executed on the server and is free to download and use.</p>
+
+     <h3>jsp</h3>
+      <p> JavaServer Pages (JSP) is a technology that helps software developers create dynamically generated web pages based on HTML, XML, or other document types.</p>
+
+     <h3>Ajax</h3>
+      <p> Set of web development techniques using many web technologies on the client-side to create asynchronous Web applications. With Ajax, web applications can send data to and retrieve from a server asynchronously (in the background) without interfering with the display and behavior of the existing page.</p>
+</div>
+<hr class="hr"> </hr>
+    <div id="QA">
+      <h2> Question-Answer </h2>
+      <ul>
+        <li> What is the difference between the Internet and the World Wide Web? </li>
+        <p class="ans"> -The Internet is a massive network of networks, a networking infrastructure, while WWW  is a way of accessing information over the medium of the Internet.</p>
+        <li> What is the purpose of the HTTP methods: </li>
+        <table id="table">
+          <tr> <td>GET</td> <td> Retrieve information from the given server using a given URI.</td></tr>
+          <tr> <td>HEAD</td> <td> Same as GET, but transfers the status line and header section only.</td></tr>
+          <tr> <td>POST</td> <td> Send data to the server, for example, customer information, file upload, etc. using HTML forms.</td></tr>
+          <tr> <td>PUT</td> <td> Replaces all current representations of the target resource with the uploaded content.</td></tr>
+          <tr> <td>PATCH</td> <td>  Update partial resources</td></tr>
+          <tr> <td>DELETE</td> <td> Removes all current representations of the target resource given by a URI.</td></tr>
+          </table>
+        <li> What HTTP method to use when sending an HTML form like the survey you answered at the beginning of the activity? Why? </li>
+        <p class="ans">-GET because it's only retrieving data.</p>
+        <li> What HTTP method does a web browser use when it accesses a page through a URL? </li>
+        <p class="ans">-PUT because it's changing the screen content of the browser to the one of the new URL.</p>
+        <li> A web server returns a 200 HTTP response code. What does this mean? Was there an error? </li>
+        <p class="ans">-There's no error, this means that everythings ok, the action requested by the client was received, understood, accepted, and processed successfully.</p>
+        <li> Is the developer's responsibility to correct a website if a user reports that tried to access the site and found a 404 error? Why? </li>
+        <p class="ans">-Yes, cause the file no longer exits in the server. </p>
+        <li> Is the developers responsibility to correct a website if a user reports that tried to access the site and found a 500 error? Why? </li>
+        <p class="ans">-No, there's an internal server error.</p>
+        <li> What does it mean that a HTML5 attribute is depreciated or disproved (deprecated)? Mention some elements of HTML 4 that are deprecated in HTML5. </li>
+        <p class="ans">-It means that the element is not available in HTML5 at all and they have been removed completely. Some examples of this are: charset, rev, shape, acronym, applet.</p>
+        <li> What are the main differences between HTML4 and HTML5? </li>
+        <p class="ans">-Older versions of HTML (less than HTML5) require proprietary plugins and APIs. (This is why a Web page that was built and tested in one browser may not load correctly in another browser.)</p>
+        <li> What structure and style components have a table?</li>
+        <p class="ans">-The structure is a table filled by rows with its respective n data. Border styles, horizontal and vertical alignment of cell contents and cell margins are some style components it has.</p>
+
+        <li> What are the main controls of an HTML5 form? </li>
+        <p class="ans">-Input elements that describe how the user interacts with the control.</p>
+         <li> How much does your browser support HTML5? </li>
+        <p class="ans">-According to http://html5test.com/ my browser (Firefox 46.0.1 ) scores 456/555. This is not that bad.</p>
+      </ul>
+    </div>
+<hr class="hr"> </hr>
+  <div id=newCont>
+      <h2>About CSS </h2>
+
+      <p>As a software engineer I recommend to use the !=important in CSS when you want to apply to a value/selector more weight than it naturally has. So if for some particular reason you have to write the same property twice in the same declaration block, then add !important to the end of the first one, the first one will have more weight. However, this declaration should not be used unless they are <strong>absolutely necessary</strong>.  </p>
+      <p>
+There's a way in which an image can se used in the background of our web page, however there are some considerations we have to make:
+<ul>
+	<li>Is the background image discrete enough to not take away the focus from what's written on it?</li>
+	<li>Will the background image work with the text colors and link colors I set up for the page?</li>
+	<li>Will the background image work with the other images I want to put on the page?</li>
+	<li>How long will the page take to load my background
+image? Is it simply too big?</li>
+	<li>Will the background image work when it is copied to fill the entire page? In all screen resolutions?</li>
+</ul>
+If the answer to all the above questions is yes, the proceed to use a background image,  if not, reconsidere this option.</p>
+
+<p>
+  CSS has several different units for expressing a length. Length is a number followed by a length unit, such as 10px, 2em, etc. The following table describes clearly how does each of these work so you can use the one that fits the best for yur purpose.
+  <table id="table">
+    <tr> <th>Unit </th> <th>Description </th></tr>
+    <tr> <td>em</td> <td> Relative to the font-size of the element (2em means 2 times the size of the current font) </td></tr>
+    <tr> <td>ex</td> <td> Relative to the x-height of the current font (rarely used)</td></tr>
+    <tr> <td>ch</td> <td>  	Relative to width of the "0" (zero)</td></tr>
+    <tr> <td>rem</td> <td>  	Relative to font-size of the root element</td></tr>
+    <tr> <td>vw</td> <td>  Relative to 1% of the width of the viewport* </td></tr>
+    <tr> <td>vh</td> <td>  	Relative to 1% of the height of the viewport* </td></tr>
+    <tr> <td>vmin</td> <td> Relative to 1% of viewport's* smaller dimension </td></tr>
+    <tr> <td>vmax</td> <td>  Relative to 1% of viewport's* larger dimension </td></tr>
+    <tr> <td>%</td> <td> Percentage</td></tr>
+    </table>
+    The em and rem units are practical in creating perfectly scalable layout!
+    <br>* Viewport = the browser window size. If the viewport is 50cm wide, 1vw = 0.5cm.</br>
+  </p>
+
+  <p>
+    Minifying CSS takes the beautified, well formed CSS code that you have written and removes the spacing, indentation, newlines, and comments. These elements are not required for CSS to be used successfully. It also makes the CSS more difficult to read.
+    The 'best practice' of many developers is to maintain a 'beautified' version, and when rolling out their project will run the styles through a minification program. They will also combine their many style files into one file.
+    The purpose of minifcation is to increase the speed of a website. Minimisation can make a script up to <strong>20% smaller</strong>, resulting in a <strong>faster download time</strong>. Some developers will also use it to 'obfuscate' their code. This makes it difficult for the code to be read, thereby making it more difficult to reverse engineer or copy.
+    It is also common practice to combine all the CSS files for a single website into one file. This has a number of benefits. It reduces the number of HTTP request that need to be made to get all the elements of a website.
+
+    <br><a title="https://cssminifier.com/" href="https://cssminifier.com/" > Click here to go to a CSS minifier </a></br>
+  </p>
+
+  </div>
+
+<hr class="hr"> </hr>
+    <div>
+      <strong id="refe">References:</strong>
+
+      <br><a title="http://www.w3schools.com/html/html_xhtml.asp" href="http://www.w3schools.com/html/html_xhtml.asp" > HTML and XHTML </a></br>
+      <br><a title="http://www.w3schools.com/php/php_intro.asp" href="http://www.w3schools.com/php/php_intro.asp" > PHP </a></br>
+      <br><a title="http://searchsoa.techtarget.com/definition/JavaScript"href="http://searchsoa.techtarget.com/definition/JavaScript" > JS </a></br>
+      <br><a title="https://en.wikipedia.org/wiki/Ajax_%28programming%29" href="https://en.wikipedia.org/wiki/Ajax_%28programming%29" > Ajax </a></br>
+    </div>
+<hr class="hr"> </hr>
+
+   <footer>
+  <p>Posted by: Ciria Cardenas - A00367773 - <a title="e-mail"href="ciri.monse@gmail.com">
+ciri.monse@gmail.com </a> </p>
+  <p> Site made with: Codepen <a title="http://www.codepen.io" href="http://www.codepen.io">
+Visit Codepen! </a>    </p>
+</footer>
+
+  </body>
+
+</html>
