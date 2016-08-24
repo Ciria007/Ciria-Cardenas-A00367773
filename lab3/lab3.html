@@ -1,0 +1,102 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <h1 align="center">Lab 3 </h1>
+    <br>
+  <div id="ex">
+        <button onclick="mySquare()" title="ex 1">Press to obtain square and cube</button>
+        <br></br>
+      <button onclick="myRand()" title="ex 2">Press to sum random numbers </button>
+     <p>Count:</p>
+      <p id="count">  </p>
+    	<p>Average of matrix by rows:</p>
+      <p id="average">  </p>
+    	<button onclick="myInv()" title="ex 5">Press to reverse number </button>
+      <p id="inv">  </p>
+      <p>In certain kind of companies it's necessary to have a report which indicates all data of employees at the moment they enter and exit certain area, this is the reason
+      why an object <i>Person</i> is created. The properties of the object are firstName,lastName,id,age and hour, fullName and changeID include methods for returning the complete
+    name of the employee and the second one allows to change the id if necessary. </p>
+      <p id="object"> </p>
+      <p>And changing the id through the method we get</p>
+      <p id="object1"> </p>
+      <p>It is also posible to do this through a variable, and we get the following</p>
+      <p id=asvar> </p>
+      <br></br>
+  </div>
+  <div class="content">
+    <h2>Questions and answers</h2>
+      <strong>What are the differences and similarities between Java and JavaScript?</strong>
+      <br>
+      <strong>Differences: </strong><br>
+    -Java is a statically typed language; JavaScript is dynamic. <br>
+    -Java is class-based; JavaScript is prototype-based. <br>
+    -Java constructors are special functions that can only be called at object creation; JavaScript "constructors" are just standard functions. <br>
+    -Java requires all non-block statements to end with a semicolon; JavaScript inserts semicolons at the ends of certain lines. <br>
+    -Java uses block-based scoping; JavaScript uses function-based scoping. <br>
+    -Java has an implicit this scope for non-static methods, and implicit class scope; JavaScript has implicit global scope.<br>
+
+      <strong>Similarities: </strong><br>
+      -Sintax,these include comments, literals, identifiers, operators, and control statements). <br>
+
+      <br></br>
+      <strong>What methods have the Date object? (List at least 5 *)</strong>
+      <br>
+      getDate() 	    Get the day as a number (1-31)<br>
+      getDay() 	      Get the weekday as a number (0-6)<br>
+      getFullYear() 	Get the four digit year (yyyy)<br>
+      getHours() 	    Get the hour (0-23)<br>
+      getMilliseconds() 	Get the milliseconds (0-999)<br>
+      getMinutes() 	  Get the minutes (0-59)<br>
+      getMonth() 	    Get the month (0-11)<br>
+      getSeconds()    	Get the seconds (0-59)<br>
+      getTime() 	      Get the time (milliseconds since January 1, 1970)<br>
+      <br></br>
+      <strong>What methods have the Arrays? (List at least 5 *)</strong>
+      <br>
+      arr.pop()   Removes the last element from an array <br>
+      arr.push()   Adds a new element to an array (at the end)<br>
+      arr.join()   Joins all array elements into a string<br>
+      arr.shift() Removes the first array element and "shifts" all other elements to a lower index<br>
+      arr.unshift() Adds a new element to an array (at the beginning), and "unshifts" older elements<br>
+      <br></br>
+      <strong>How a variable is declared within a function for local use?</strong>
+      <br>
+      The sintax of declaring a variable is always the same "var nameVar", the difference is where it is placed. In order to make it local, it
+      must be declared inside the function. Example:
+      <br>
+      function myFunction(){
+          var varName;   //local var
+      }
+      <br></br>
+      <strong>What are the implications using global variables inside a function?</strong>
+      <br>
+      All scripts and functions on a web page can access it, so they can be overwritten.
+      <br></br>
+      <strong>What String method can be used to look for patterns in regular expressions? For what could you use this in a web application?</strong>
+      <br>
+      The search() method uses an expression to search for a match, and returns the position of the match.
+      It can be used for finding stuff, everyday when we seek something in internet we are likely to press ctrl+f to quickly find what we want,
+      so this will help us to do this, making the search much more powerful (case insensitive for example).
+      <br></br>
+  </div>
+
+  <style>
+  body{
+    background-color: pink;
+  }
+  h1{
+    font-weight: bold;
+  }
+  p :not(#count){
+    font-weight: bold;
+  }
+  </style>
+
+  <script src="lab3.js"> </script>
+
+  <footer>
+    <h3>Ciria Monserrat Cardenas Sanchez - A00367773</h3>
+  </footer>
+  </body>
+</html>
