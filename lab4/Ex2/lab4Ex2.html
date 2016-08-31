@@ -1,0 +1,120 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Lab 4</title>
+  <link rel="stylesheet" type="text/css" href="lab4Ex2.css">
+</head>
+<body onload="loadFun()">
+  <h1>New arrivals</h1>
+  <h2>Order Now!</h2><br>
+  <div id="cont">
+    <div id="men">
+      <img src="menShoe.jpg"/ id="menShoe" >
+      <div class="info">
+          <h3>Puma Men's Elsuv2MidCVDP Boots</h3>
+          <h4 class="disc">$1150.00 MXN</h4>
+          <h4 class="newprice">$950.00 MXN</h4>
+          <ul>
+              <li>Cotton/Suede</li>
+              <li>Imported</li>
+              <li>Synthetic sole</li>
+              <li>Lace-up sneaker with metal eyelets featuring stripe at midsole and embroidered logo at quarterpanel</li>
+          </ul>
+      </div>
+      <br></br> Number of pair of shoes:
+      <input type="number" id="orderMen" min="0" oninput="dataMen()"></input><br>
+      Size of shoes (in cm):
+      <input type="number" min="20" max="30"></input>
+      <br></br>
+    </div>
+
+    <div id="women">
+      <img src="womenShoe.jpg" id="womenShoe">
+      <div class="info">
+          <h3>Anand Archies Women's Bellies AA-87</h3>
+          <h4 class="disc">$1350.00 MXN</h4>
+          <h4 class="newprice">$999.99 MXN</h4>
+          <ul><li>Leather</li>
+              <li>  Imported</li>
+              <li>Synthetic sole</li>
+              <li>Heel measures approximately 4"</li>
+              <li>Gladiator-inspired heeled sandal with cage-like leather upper featuring lace front with tie closure</li>
+              <li>Wrapped chunky heel</li>
+              <li>Open heel counter</li>
+          </ul>
+      </div>
+      <br></br>Number of pair of shoes:
+      <input type="number" min="0" id="orderWomen" oninput="dataWomen()"></input><br>
+      Size of shoes (in cm):
+      <input type="number" min="20" max="30"></input>
+      <br></br>
+    </div>
+
+    <div id="kid">
+      <img src="kidShoe.jpg"/ id="kidShoe">
+      <div class="info">
+          <h3>Port Unisex Sport Shoes For Children</h3>
+          <h4 class="disc">$680.00 MXN</h4>
+          <h4 class="newprice">$550.00 MXN</h4>
+          <ul>
+            <li>Leather and Textile</li>
+            <li>Rubber sole</li>
+            <li>Heel measures approximately 1.5"</li>
+            <li>Flexible sole</li>
+            <li>Long lasting lights</li>
+            <li>Non-marking outsole</li>
+            <li>Lace-up sneaker with metal eyelets featuring stripe at midsole and embroidered logo at quarterpane</li>
+          </ul>
+      </div>
+      <br></br> Number of pair of shoes:
+      <input type="number" min="0" id="orderKid" oninput="dataKid()"></input><br>
+      Size of shoes (in cm):
+      <input type="number" min="10" max="22"></input>
+      <br></br>
+    </div>
+
+    <div>
+      <h3>Summary:</h3>
+      <table>
+        <tr>
+            <th> </td>
+            <th>Pairs</td>
+            <th>Taxes</td>
+            <th>Cost</td>
+        </tr>
+        <tr>
+            <td>Women</td>
+            <td id="numWomen"></td>
+            <td id="taxWomen"></td>
+            <td id="costWomen"></td>
+        </tr>
+        <tr>
+            <td>Men</td>
+            <td id="numMen"></td>
+            <td id="taxMen"></td>
+            <td id="costMen"</td>
+        </tr>
+        <tr>
+            <td>Kid</td>
+            <td id="numKid"></td>
+            <td id="taxKid"></td>
+            <td id="costKid"</td>
+        </tr>
+        <tr>
+            <td class="totals" id="total">Total</td>
+            <td class="totals" id="numTotal"></td>
+            <td class="totals" id="taxTotal"></td>
+            <td class="totals" id="costTotal"</td>
+        </tr>
+    </table>
+
+    <div  id="dir">
+    <h3>Introduce your direction </h3>
+    <input type="text"></input>
+    </div>
+  </div>
+  </div>
+
+  <script src="lab4Ex2.js"></script>
+</body>
+</html>

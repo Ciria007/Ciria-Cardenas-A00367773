@@ -1,0 +1,57 @@
+#menShoe,#womenShoe,#kidShoe{
+  width: 300;
+  height: 300;
+  display: inline;
+}
+tr, th,td{
+  border: 1px solid black;
+  text-align: center;
+  font-size:18px;
+}
+table{
+  display: inline;
+  font-size:18px;
+}
+
+div{
+  align:center;
+}
+
+.info{
+  float:right;
+}
+img{
+  float:center;
+}
+#dir{
+  float: right;
+}
+h1, h2{
+  text-align: center;
+  font-weight: bold;
+  background-color: purple;
+  color: white;
+}
+body{
+  background-color: #FFDA19;
+  font-size: 18px;
+}
+
+.disc{
+  text-decoration: line-through;
+}
+h4{
+    display: inline;
+}
+
+.cont{
+  align:center;
+}
+
+.newprice{
+  color:red;
+}
+
+.totals{
+  font-weight: bold;
+}
