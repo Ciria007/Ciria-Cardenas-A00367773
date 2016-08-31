@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <title>Lab 4</title>
+    <link rel="stylesheet" type="text/css" href="lab4Ex3.css">
+  </head>
+  <body>
+
+    <div id="promot">
+      <h1>Dell thanks for your time on answering the following survey!</h1>
+      <p> Our support team and the entire company thanks your contribution </p>
+      <p> The following code is going to be participating in a raffle of a <strong>Dell Laptop I5559_I581TPW10S Purpura </strong> on September 11th</p>
+      <p id="rand"></p>
+      <img src="laptop.jpg"></img>
+    </div>
+
+    <div id="survey">
+      <h1>Welcome to DELL</h1>
+    <form>
+      <h3>How many hours a day you use the computer?</h3>
+      <select required size="4">
+      <option >-</option>
+       <option>2-5</option>
+       <option>6-9</option>
+       <option>>10</option>
+      </select>
+
+      <h3>How satisfied are you with the performance of your computer?</h3>
+      <input type="range" name="rangeInput" required min="0" max="10" onchange="updateTextInput(this.value);">
+      <input type="text" id="textInput" value="">
+
+      <h3>Would you buy another laptop with us?</h3>
+      <input type="radio"  name="buy" checked> Yes </input><br>
+      <input type="radio" name="buy"> No </input><br>
+      <input type="radio" name="buy"> Not sure </input>
+
+      <h3>Would you recommend our service and devices to others?</h3>
+      <input type="checkbox" name="rec" checked> Of course </input><br>
+      <input type="checkbox" name="rec"> Maybe </input><br>
+      <input type="checkbox" name="rec"> No </input>
+
+      <h3>Please leave us a comment, we'll love to know about it</h3>
+      <input id="comm" type="text" name="txt" required>  </input><br></br>
+      <input type="button" name="Submit" value="Submit" onclick="promo();"></input>
+    </form>
+  </div>
+
+    <script src=lab4Ex3.js></script>
+
+  </body>
+</html>

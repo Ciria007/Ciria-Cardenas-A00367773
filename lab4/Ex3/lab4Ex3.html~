@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Lab 4</title>
+  </head>
+  <body>
+    <form>
+      <h3>How many hours a day you use the computer?</h3>
+      <input type="checkbox"> 2-5 </input><br>
+      <input type="checkbox"> 6-8 </input><br>
+      <input type="checkbox"> >10 </input><br>
+
+      How often do you use the computer?<br>
+      <input type="checkbox">  </input>
+      <input type="checkbox">  </input>
+      <input type="checkbox">  </input>
+
+      How often do you use the computer?<br>
+      <input type="checkbox">  </input>
+      <input type="checkbox">  </input>
+      <input type="checkbox">  </input>
+
+      How often do you use the computer?<br>
+      <input type="checkbox">  </input>
+      <input type="checkbox">  </input>
+      <input type="checkbox">  </input>
+
+    </form>
+
+  </body>
+</html>

@@ -1,0 +1,36 @@
+body{
+  background-color: Crimson  ;
+  font-size: 18px;
+}
+h1{
+  text-align: center;
+  font-size: 40px;
+  color: white ;
+  font-weight: bold;
+}
+h3{
+ color: AntiqueWhite;
+}
+input{
+  font-size: 15px;
+}
+
+p{
+  color: AntiqueWhite;
+  font-size: 20px;
+}
+
+#rand{
+  font-weight: bold;
+  background-color: pink;
+  text-align: center;
+  color: black;
+}
+
+img{
+  width: 400;
+  height: 300;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
