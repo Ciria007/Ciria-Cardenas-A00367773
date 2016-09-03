@@ -1,0 +1,86 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="lab5.css">
+  </head>
+
+  <body>
+    <img id="landscape" src="landscape.jpg">
+    <h1 id="welcome"></h1>
+    <button type="button" onclick="changeFont()">Press here to randomly change header font style</button>
+    <h1 id="header">
+      Hello Up fans!
+    </h1>
+    <form>
+      <h3>Introduce your complete name:</h3>
+      <input type="text"> </input>
+      <img id="quesName" class="question" src="question.png" title="Lastname, Fistname">
+      <br><h3>Introduce your address:</h3>
+      <input type="text"> </input>
+      <img id="quesAddr" class="question" src="question.png" title="Street # Av, City, State">
+      <br><h3>How much did you enjoyed the movie?</h3>
+      <input type="range" name="rangeInput" required min="0" max="10" onchange="updateTextInput(this.value);"> </input>
+      <input type="text" id="textInput" value="">
+      <img id="quesLike" class="question" src="question.png" title="0->dislike  10->love it!">
+    </form>
+    <h2>Drag into the box your favorite characters</h2>
+    <img id="char1" src="char1.png" class="drag" title="Fredericksen" ondragstart="drag(event)">
+    <img id="char2" src="char2.png" class="drag" title="Russell" ondragstart="drag(event)">
+    <img id="char3" src="char3.png" class="drag" title="Dog" ondragstart="drag(event)">
+    <img id="char4" src="char4.png" class="drag" title="Kevin" ondragstart="drag(event)">
+    <br>
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <br>
+    <h2>Links:</h2>
+    <table>
+      <tr>
+        <th>Used for</th>
+        <th>Link</th>
+      </tr>
+      <tr>
+        <td>Round borders</td>
+         <td><a href="http://www.w3schools.com/css/css3_borders.asp">http://www.w3schools.com/css/css3_borders.asp</a></td>
+      </tr>
+      <tr>
+        <td>js timing</td>
+        <td><a href="http://www.w3schools.com/js/js_timing.asp">http://www.w3schools.com/js/js_timing.asp</a></td>
+      </tr>
+      <tr>
+        <td>Opacity</td>
+        <td><a href="http://www.w3schools.com/css/css_image_transparency.asp">http://www.w3schools.com/css/css_image_transparency.asp</a></td>
+      </tr>
+      <tr>
+        <td>Setting css styles with js</td>
+        <td><a href="https://www.kirupa.com/html5/setting_css_styles_using_javascript.htm">http://www.w3schools.com/css/css_image_transparency.asp</a></td>
+      </tr>
+      <tr>
+        <td>Drag and drop</td>
+        <td><a href="http://www.w3schools.com/html/html5_draganddrop.asp">http://www.w3schools.com/css/css_image_transparency.asp</a></td>
+      </tr>
+    </table>
+
+    <br>
+    <button type="button" onClick="toogle();">Press here to show/hide questions</button>
+    <div id="questions">
+      <p><strong>What are the differences between the possible values of the position property?</strong></p>
+      Static: elements are not affected by the top, bottom, left, and right properties.<br>
+      Relative: positioned relative to its normal position.<br>
+      Fixed: always stays in the same place even if the page is scrolled.<br>
+      Absolute: positioned relative to the nearest positioned ancestor.<br>
+      <p><strong>What is the zIndex and what is used for?</strong></p>
+      z-index specifies the stack order of elements. As an element has a higher value, it's going to be in front of the rest od the elements.
+      <p><strong>What are the standard values of the visibility property?</strong></p>
+      Visible: Element is shown.<br>
+      Hidden: Element is invisible (but still takes space).<br>
+      Collapse: Used only for table elements, removes a row or column but doesn't affect layout.<br>
+      Initial: Default value.<br>
+      Inherit: Inherit property from parent element.<br>
+      <p><strong>Having read the article on the style changes with JavaScript, and considering your current knowledge on HTML5, JavaScript and CSS, which of the two approaches would you use from the article for the following situations? (Argument in your answer):</strong></p>
+      <p class="sub">A small business of your high school buddy, asks you to do a website. As they are just starting they have low budget and they tell you that they want a very "simple" page, do as you like and put whatever you want. But every time you show them the finished page, new ideas about new extensions also that the page would look better in another color.</p>
+      <a>I will make all the modifications directly from the .css file and maybe modify some stuff with js. But since they have not set any requirements, it might be a simple design.</a>
+      <p class="sub">You have an amazing idea for your own startup. You want to make it run as soon as possible and you are convinced that in a couple of months it will grow at pace like facebook.</p>
+      <a>I will use Javascript to give style to the page because I'm thinking it will be really user interactive so I would like to be changing depending on the actions that they perform. So by the use of classes and the direct .style to do all this.</a>
+    </div>
+
+    <script src="lab5.js"></script>
+  </body>
+</html>
