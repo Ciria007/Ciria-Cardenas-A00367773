@@ -1,0 +1,177 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Lab 6</title>
+  <link rel="stylesheet" type="text/css" href="lab4Ex2.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body onload="loadFun()" style="background-color:Bisque;">
+  <div class="page-header">
+    <h1  style="font-weight:bold;">NEW ARRIVALS</h1>
+  </div>
+  <div class="jumbotron" style="background-color:Crimson ; color:white;">
+    <h2>Order Now!</h2>
+  </div>
+  <div id="cont" class="container-fluid">
+    <div class="row">
+      <div id="men">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+        <img src="menShoe.jpg"/ id="menShoe">
+        </div>
+      </div>
+
+      <div id="women">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <img src="womenShoe.jpg" id="womenShoe">
+        </div>
+      </div>
+
+      <div id="kid">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+          <img src="kidShoe.jpg"/ id="kidShoe">
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+       <!-- Men info -->
+      <div class="info" >
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+          <h3>Puma Men's Elsuv2MidCVDP Boots</h3>
+          <h4 class="disc">$1150.00 MXN</h4>
+          <h4 class="newprice">$950.00 MXN</h4>
+          <ul>
+              <li>Cotton/Suede</li>
+              <li>Imported</li>
+              <li>Synthetic sole</li>
+              <li>Lace-up sneaker with metal eyelets featuring stripe at midsole and embroidered logo at quarterpanel</li>
+          </ul>
+
+
+      </div>
+     </div>
+
+    <!-- Women info -->
+    <div class="info">
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+        <h3>Anand Archies Women's Bellies AA-87</h3>
+        <h4 class="disc">$1350.00 MXN</h4>
+        <h4 class="newprice">$999.99 MXN</h4>
+        <ul><li>Leather</li>
+            <li>  Imported</li>
+            <li>Synthetic sole</li>
+            <li>Heel measures approximately 4"</li>
+            <li>Gladiator-inspired heeled sandal with cage-like leather upper featuring lace front with tie closure</li>
+            <li>Wrapped chunky heel</li>
+            <li>Open heel counter</li>
+          </ul>
+
+      </div>
+    </div>
+
+    <!-- kid info-->
+    <div class="info">
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+        <h3>Port Unisex Sport Shoes For Children</h3>
+        <h4 class="disc">$680.00 MXN</h4>
+        <h4 class="newprice">$550.00 MXN</h4>
+        <ul>
+          <li>Leather and Textile</li>
+          <li>Rubber sole</li>
+          <li>Heel measures approximately 1.5"</li>
+          <li>Flexible sole</li>
+          <li>Long lasting lights</li>
+          <li>Non-marking outsole</li>
+          <li>Lace-up sneaker with metal eyelets featuring stripe at midsole and embroidered logo at quarterpane</li>
+        </ul>
+
+    </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+      Number of pair of shoes:
+      <input type="number" id="orderMen" min="0" oninput="dataMen()"></input><br>
+      Size of shoes (in cm):
+      <input id="sizeMen"type="number" min="20" max="30"></input>
+      <br>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+      Number of pair of shoes:
+      <input type="number" min="0" id="orderWomen" oninput="dataWomen()"></input><br>
+      Size of shoes (in cm):
+      <input id="sizeWomen" type="number" min="20" max="30"></input>
+      <br>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+      Number of pair of shoes:
+      <input type="number" min="0" id="orderKid" oninput="dataKid()"></input><br>
+      Size of shoes (in cm):
+      <input id="sizeKid" type="number" min="10" max="22"></input>
+      <br>
+    </div>
+
+  </div>
+
+
+  <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+        <h3>Summary</h3>
+        <table>
+          <tr>
+              <th> </td>
+              <th>Pairs</td>
+              <th>Taxes</td>
+              <th>Cost</td>
+          </tr>
+          <tr>
+            <td>Men</td>
+            <td id="numMen"></td>
+            <td id="taxMen"></td>
+            <td id="costMen"</td>
+          </tr>
+          <tr>
+            <td>Women</td>
+            <td id="numWomen"></td>
+            <td id="taxWomen"></td>
+            <td id="costWomen"></td>
+          </tr>
+          <tr>
+              <td>Kid</td>
+              <td id="numKid"></td>
+              <td id="taxKid"></td>
+              <td id="costKid"</td>
+          </tr>
+          <tr>
+              <td class="totals" id="total">Total</td>
+              <td class="totals" id="numTotal"></td>
+              <td class="totals" id="taxTotal"></td>
+              <td class="totals" id="costTotal"</td>
+          </tr>
+        </table>
+        <br></br>
+      </div>
+
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+      <h3>Introduce your direction </h3>
+      <input type="text" id="direction"></input>
+      <h3>Additional comments</h3>
+      <input type="text"></input>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+      <br></br>
+      <button type="submit" class="btn-xlarge btn-danger" role="button" onclick="endProcess();"> Order now! </button>
+    </div>
+
+
+
+  </div>
+
+  <script src="lab4Ex2.js"></script>
+</body>
+</html>
