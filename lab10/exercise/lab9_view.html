@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>BMI</title>
+    </head>
+    <body>
+        <h1>Get your body mass index (BMI)</h1>
+        <form method="POST" action="lab9_controller.php">
+            <table>
+                <tfoot>
+                    <tr>
+                        <td>
+                            <input type="submit" name="calculate" value="Calculate" id="calculate"/>
+                        </td>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <th>
+                            <label for="mass">Mass (kg)</label>
+                        </th>
+                        <td>
+                            <input type="text" name= "mass" id="mass"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="height">Height (m)</label>
+                        </th>
+                        <td>
+                            <input type="text" name= "height" id="height"/>
+                        </td>
+                    </tr>
+                </tbody>
+        </form>
+    </body>
+</html>

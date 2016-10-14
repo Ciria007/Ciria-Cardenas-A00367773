@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="lab10.css">
+
+</head>
+<body>
+<div>
+<h1 align="center">Rescate 1 Queretaro </h1>
+<hr>
+<p><span class="error">*obligatorio.</span></p>
+<!-- <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">-->
+<form method="post" action="controller.php">
+  Nombre: <span class="error">*</span><input type="text" name="name">
+  <br><br>
+
+  E-mail: <span class="error">*</span><input type="text" name="email">
+  <br><br>
+
+  Telefono: </span><input type="text" name="cellphone">
+  <br><br>
+
+  Curso de interes:<span class="error">*</span>
+  <input type="radio" name="gender" value="tamp">TAMP-B
+  <input type="radio" name="gender" value="other">Other
+  <br><br>
+
+  Mensaje: <br><textarea name="comment" rows="5"></textarea>
+  <br><br>
+
+  <input type="submit" name="submit" value="Enviar">
+</form>
+</div>
+
+
+
+
+</body>
+</html>
